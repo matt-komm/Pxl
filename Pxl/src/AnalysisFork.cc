@@ -92,7 +92,7 @@ std::ostream& AnalysisFork::print(int level, std::ostream& os, int pan) const
 {
 	printPan1st(os, pan) << "AnalysisFork: " << getName() << std::endl;
 
-	if (level>0) os << printContent(level, os, pan);
+	if (level>0) printContent(level, os, pan);
 
 	for(ObjectOwner::const_iterator iter = getObjectOwner().begin();
 		iter!=getObjectOwner().end(); ++iter)

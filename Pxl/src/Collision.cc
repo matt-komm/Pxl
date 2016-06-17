@@ -14,7 +14,7 @@ std::ostream& Collision::print(int level, std::ostream& os, int pan) const
 {
     printPan1st(os, pan) << "Collision: " << getName() << std::endl;
 
-    if (level>0) os << printContent(level, os, pan);
+    if (level>0) printContent(level, os, pan);
 
     return os;
 }
